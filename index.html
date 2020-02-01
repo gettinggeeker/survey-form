@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form for FormYourBody Gym</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+    
+        <h1 id="title">Suvey Form for gym members</h1>
+        <p id="description">We are planning some construction in the FormYourBody Gym and would like to receive some feedback!</p>
+        
+        <form id="survey-form">            
+            <div>
+                <label for="name" id="name-label">Your name:</label><input id="name" type="text" placeholder="Please enter your name" required>
+            </div>
+            <div>                
+                <label for="email" id="email-label" pattern=".+@." size="30">Your e-mail address:</label><input id="email" type="email" placeholder="Please enter your e-mail address" required>
+            </div>
+            <div>                
+                <label for="number" id="number-label">Your age:</label><input id="number" type="number" placeholder="Please enter your age" min="0" max="99">
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown">When do you usually visit the gym?</label>
+                <select id="dropdown">
+                    <option value="morning">06:00-10:00</option>
+                    <option value="daytime">10:00-16:00</option>
+                    <option value="after-work">16:00-20:00</option>
+                    <option value="night">20:00-23:00</option>
+                </select>
+            </div>
+            <div>
+                <label for="price" id="price">What do you think about our prices?</label>
+                <div class="box-container">
+                    <div>
+                        <label><input type="radio" name="price" value="too-cheap">Too cheap!</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="price" value="fair">Fair.</label>
+                    </div>
+                    <div>
+                        <label id="box-3"><input type="radio" name="price" value="too-expensive">Too expensive guys!</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="recommendation" id="recommendation">What do you think which part of the gym should be renewed?</label>
+                <div class="box-container">
+                    <label for="reception"><input id="reception" value="reception" type="checkbox" name="construction">Reception</label>
+                    <label for="buffet"><input id="buffet" value="buffet" type="checkbox" name="construction">Buffet</label>
+                    <label for="dressing-room"><input id="dressing-room" value="dressing-room" type="checkbox" name="construction">Dressing room</label>
+                    <label for="bathroom"><input id="bathroom" value="bathroom" type="checkbox" name="construction">Bathroom</label>
+                </div>
+            </div>
+            <div>
+                <p>Here you can tell us how else we can improve our services:</p>
+                <textarea id="comments-section" placeholder="Please leave your detailed feedback here!"></textarea>            
+            </div>
+            <div>
+                <button id="submit" type="submit"><b>Submit answers!</b></button>   
+            </div>
+        </form>    
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+
+</html>
